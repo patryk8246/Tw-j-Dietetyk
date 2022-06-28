@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox prefHeight="261.0" prefWidth="330.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="application.Controller">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="260.0" prefWidth="330.0" style="-fx-border-width: 5;">
+         <children>
+            <VBox alignment="CENTER" prefHeight="50.0" prefWidth="330.0">
+               <children>
+                  <Label text="O autorze">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="218.0" prefWidth="330.0" style="-fx-background-color: #6babff;">
+               <children>
+                  <Label prefHeight="114.0" prefWidth="330.0" text="Autorem aplikacji jest Patryk Karczewski, student informatyki o specjalności programowanie na Wyższej Szkoły Bankowej. Trener personalny po szkoleniach w zakresie treningu i dietetyki. " textAlignment="JUSTIFY" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                     </padding>
+                  </Label>
+                  <VBox alignment="TOP_CENTER" prefHeight="85.0" prefWidth="330.0">
+                     <children>
+                        <Label text="Kontakt:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="p.karczewski1995@gmail.com" textFill="#e71414">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label layoutX="96.0" layoutY="45.0" text="+48 510 686 595" textFill="#e71414">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>

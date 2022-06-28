@@ -1,0 +1,59 @@
+Posiłek 1: 
+Chleb żytni razowy: 
+70
+Jaja kurze: 
+30
+Szynka gotowana(wędlina): 
+70
+Masło ekstra: 
+7
+Pomidor: 
+150
+Cebula: 
+25
+Posiłek 2: 
+Kasza bulgur: 
+70
+Filet z dorsza: 
+80
+Oliwa z oliwek: 
+10
+Pomidor: 
+150
+Rzodkiewka: 
+25
+Posiłek 3: 
+Ryż biały: 
+60
+Pierś kurczaka: 
+80
+Oliwa z oliwek: 
+10
+Pomidor: 
+150
+Cebula: 
+25
+Posiłek 4: 
+Kasza gryczana: 
+80
+Pierś indyka: 
+70
+Olej lniany: 
+9
+Ogórek: 
+150
+Rzodkiewka: 
+25
+Posiłek 5: 
+Tuńczyk w wodzie: 
+40
+Mozzarella light: 
+60
+Oliwa z oliwek: 
+5
+Sałata lodowa: 
+150
+Cebula: 
+25
+Papryka czerwona: 
+100

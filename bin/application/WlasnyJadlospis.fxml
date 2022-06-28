@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="489.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="843.0" prefWidth="744.0">
+         <children>
+            <VBox layoutY="-9.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="859.0" prefWidth="754.0" style="-fx-border-width: 5;">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="58.0" prefWidth="758.0">
+                     <children>
+                        <Label text="Własny jadłospis">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="806.0" prefWidth="754.0" style="-fx-background-color: #6babff;">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="41.0" prefWidth="647.0">
+                           <children>
+                              <Label text="Śniadanie">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="150.0" right="293.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="10.0" text="Śniadanie II">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="7.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="199.0" prefWidth="751.0">
+                           <children>
+                              <HBox prefHeight="199.0" prefWidth="363.0">
+                                 <children>
+                                    <VBox prefHeight="199.0" prefWidth="186.0">
+                                       <children>
+                                          <Label layoutX="10.0" layoutY="32.0" text="Produkt węglowodanowy:">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="6.0" left="7.0" top="7.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label text="Produkt białkowy:">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" left="7.0" top="4.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="10.0" text="Produkt białkowy 2:">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" left="7.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="53.0" text="Produkt tłuszczowy:">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" left="7.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="75.0" text="Źródło warzyw:">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" left="7.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="96.0" prefHeight="22.0" prefWidth="122.0" text="Źródło warzyw 2:">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" left="7.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                    <VBox alignment="TOP_CENTER" prefHeight="199.0" prefWidth="161.0">
+                                       <children>
+                                          <ChoiceBox fx:id="weglowodanySniadanie" prefWidth="150.0">
+                                             <VBox.margin>
+                                                <Insets bottom="6.0" top="5.0" />
+                                             </VBox.margin>
+                                          </ChoiceBox>
+                                          <ChoiceBox fx:id="bialkoSniadanie" layoutX="10.0" layoutY="10.0" prefWidth="150.0">
+                                             <VBox.margin>
+                                                <Insets bottom="6.0" />
+                                             </VBox.margin>
+                                          </ChoiceBox>
+                                          <ChoiceBox fx:id="bialko2Sniadanie" layoutX="10.0" layoutY="36.0" prefWidth="150.0">
+                                             <VBox.margin>
+                                                <Insets bottom="6.0" />
+                                             </VBox.margin>
+                                          </ChoiceBox>
+                                          <ChoiceBox fx:id="tluszczeSniadanie" layoutX="10.0" layoutY="61.0" prefWidth="150.0">
+                                             <VBox.margin>
+                                                <Insets bottom="6.0" />
+                                             </VBox.margin>
+                                          </ChoiceBox>
+                                          <ChoiceBox fx:id="warzywaSniadanie" layoutX="10.0" layoutY="87.0" prefHeight="26.0" prefWidth="149.0">
+                                             <VBox.margin>
+                                                <Insets bottom="6.0" />
+                                             </VBox.margin>
+                                          </ChoiceBox>
+                                          <ChoiceBox fx:id="warzywa2Sniadanie" layoutX="47.0" layoutY="143.0" prefHeight="26.0" prefWidth="149.0" />
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="10.0" prefHeight="199.0" prefWidth="363.0">
+                                 <children>
+                                    <VBox prefHeight="100.0" prefWidth="186.0">
+                                       <children>
+                                          <Label layoutX="10.0" layoutY="32.0" text="Produkt węglowodanowy:">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="6.0" left="7.0" top="7.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label text="Produkt białkowy:">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" left="7.0" top="4.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="53.0" text="Produkt tłuszczowy:">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" left="7.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="75.0" text="Źródło warzyw:">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" left="7.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="96.0" prefHeight="22.0" prefWidth="122.0" text="Źródło warzyw 2:">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" left="7.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="TOP_CENTER" prefHeight="199.0" prefWidth="186.0">
+                                       <children>
+                                          <ChoiceBox fx:id="weglowodanySniadanieII" prefWidth="150.0">
+                                             <VBox.margin>
+                                                <Insets bottom="6.0" top="5.0" />
+                                             </VBox.margin>
+                                          </ChoiceBox>
+                                          <ChoiceBox fx:id="bialkoSniadanieII" layoutX="10.0" layoutY="10.0" prefWidth="150.0">
+                                             <VBox.margin>
+                                                <Insets bottom="6.0" />
+                                             </VBox.margin>
+                                          </ChoiceBox>
+                                          <ChoiceBox fx:id="tluszczeSniadanieII" layoutX="10.0" layoutY="36.0" prefWidth="150.0">
+                                             <VBox.margin>
+                                                <Insets bottom="6.0" />
+                                             </VBox.margin>
+                                          </ChoiceBox>
+                                          <ChoiceBox fx:id="warzywaSniadanieII" layoutX="10.0" layoutY="61.0" prefWidth="150.0">
+                                             <VBox.margin>
+                                                <Insets bottom="6.0" />
+                                             </VBox.margin>
+                                          </ChoiceBox>
+                                          <ChoiceBox fx:id="warzywa2SniadanieII" layoutX="10.0" layoutY="87.0" prefHeight="26.0" prefWidth="149.0">
+                                             <VBox.margin>
+                                                <Insets bottom="6.0" />
+                                             </VBox.margin>
+                                          </ChoiceBox>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="42.0" prefWidth="710.0">
+                           <children>
+                              <Label text="Obiad">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="150.0" right="317.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="10.0" text="Podwieczorek">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="7.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="167.0" prefWidth="861.0">
+                           <children>
+                              <HBox prefHeight="199.0" prefWidth="363.0">
+                                 <children>
+                                    <VBox prefHeight="167.0" prefWidth="182.0">
+                                       <children>
+                                          <Label layoutX="10.0" layoutY="32.0" text="Produkt węglowodanowy:">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="6.0" left="7.0" top="7.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label text="Produkt białkowy:">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" left="7.0" top="4.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="53.0" text="Produkt tłuszczowy:">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" left="7.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="75.0" text="Źródło warzyw:">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" left="7.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="96.0" prefHeight="22.0" prefWidth="122.0" text="Źródło warzyw 2:">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" left="7.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                    <VBox alignment="TOP_CENTER" prefHeight="167.0" prefWidth="170.0">
+                                       <children>
+                                          <ChoiceBox fx:id="weglowodanyObiad" prefWidth="150.0">
+                                             <VBox.margin>
+                                                <Insets bottom="6.0" top="5.0" />
+                                             </VBox.margin>
+                                          </ChoiceBox>
+                                          <ChoiceBox fx:id="bialkoObiad" layoutX="10.0" layoutY="10.0" prefWidth="150.0">
+                                             <VBox.margin>
+                                                <Insets bottom="6.0" />
+                                             </VBox.margin>
+                                          </ChoiceBox>
+                                          <ChoiceBox fx:id="tluszczeObiad" layoutX="10.0" layoutY="36.0" prefWidth="150.0">
+                                             <VBox.margin>
+                                                <Insets bottom="6.0" />
+                                             </VBox.margin>
+                                          </ChoiceBox>
+                                          <ChoiceBox fx:id="warzywaObiad" layoutX="10.0" layoutY="61.0" prefWidth="150.0">
+                                             <VBox.margin>
+                                                <Insets bottom="6.0" />
+                                             </VBox.margin>
+                                          </ChoiceBox>
+                                          <ChoiceBox fx:id="warzywa2Obiad" layoutX="10.0" layoutY="87.0" prefHeight="26.0" prefWidth="149.0">
+                                             <VBox.margin>
+                                                <Insets bottom="6.0" />
+                                             </VBox.margin>
+                                          </ChoiceBox>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="10.0" prefHeight="172.0" prefWidth="363.0">
+                                 <children>
+                                    <VBox prefHeight="100.0" prefWidth="186.0">
+                                       <children>
+                                          <Label layoutX="10.0" layoutY="32.0" text="Produkt węglowodanowy:">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="6.0" left="7.0" top="7.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label text="Produkt białkowy:">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" left="7.0" top="4.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="53.0" text="Produkt tłuszczowy:">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" left="7.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="75.0" text="Źródło warzyw:">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" left="7.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="96.0" prefHeight="22.0" prefWidth="122.0" text="Źródło warzyw 2:">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" left="7.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="TOP_CENTER" prefHeight="199.0" prefWidth="186.0">
+                                       <children>
+                                          <ChoiceBox fx:id="weglowodanyPodwieczorek" prefWidth="150.0">
+                                             <VBox.margin>
+                                                <Insets bottom="6.0" top="5.0" />
+                                             </VBox.margin>
+                                          </ChoiceBox>
+                                          <ChoiceBox fx:id="bialkoPodwieczorek" layoutX="10.0" layoutY="10.0" prefWidth="150.0">
+                                             <VBox.margin>
+                                                <Insets bottom="6.0" />
+                                             </VBox.margin>
+                                          </ChoiceBox>
+                                          <ChoiceBox fx:id="tluszczePodwieczorek" layoutX="10.0" layoutY="36.0" prefWidth="150.0">
+                                             <VBox.margin>
+                                                <Insets bottom="6.0" />
+                                             </VBox.margin>
+                                          </ChoiceBox>
+                                          <ChoiceBox fx:id="warzywaPodwieczorek" layoutX="10.0" layoutY="61.0" prefWidth="150.0">
+                                             <VBox.margin>
+                                                <Insets bottom="6.0" />
+                                             </VBox.margin>
+                                          </ChoiceBox>
+                                          <ChoiceBox fx:id="warzywa2Podwieczorek" layoutX="10.0" layoutY="87.0" prefHeight="26.0" prefWidth="149.0">
+                                             <VBox.margin>
+                                                <Insets bottom="6.0" />
+                                             </VBox.margin>
+                                          </ChoiceBox>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="37.0" prefWidth="791.0">
+                           <children>
+                              <Label text="Kolacja">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="7.0" right="7.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="TOP_CENTER" prefHeight="199.0" prefWidth="794.0">
+                           <children>
+                              <VBox prefHeight="100.0" prefWidth="186.0">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="32.0" text="Produkt białkowy:">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="6.0" left="7.0" top="7.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Produkt białkowy 2:">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="7.0" top="4.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label layoutX="10.0" layoutY="10.0" text="Produkt tłuszczowy:">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="7.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label layoutX="10.0" layoutY="53.0" text="Źródło warzyw:">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="7.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label layoutX="10.0" layoutY="75.0" text="Źródło warzyw 2:">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="7.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label layoutX="10.0" layoutY="96.0" prefHeight="22.0" prefWidth="122.0" text="Źródło warzyw 3:">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="7.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="TOP_CENTER" prefHeight="199.0" prefWidth="186.0">
+                                 <children>
+                                    <ChoiceBox fx:id="bialkoKolacja" prefWidth="150.0">
+                                       <VBox.margin>
+                                          <Insets bottom="6.0" top="5.0" />
+                                       </VBox.margin>
+                                    </ChoiceBox>
+                                    <ChoiceBox fx:id="bialko2Kolacja" layoutX="10.0" layoutY="10.0" prefWidth="150.0">
+                                       <VBox.margin>
+                                          <Insets bottom="6.0" />
+                                       </VBox.margin>
+                                    </ChoiceBox>
+                                    <ChoiceBox fx:id="tluszczeKolacja" layoutX="10.0" layoutY="36.0" prefWidth="150.0">
+                                       <VBox.margin>
+                                          <Insets bottom="6.0" />
+                                       </VBox.margin>
+                                    </ChoiceBox>
+                                    <ChoiceBox fx:id="warzywaKolacja" layoutX="10.0" layoutY="61.0" prefWidth="150.0">
+                                       <VBox.margin>
+                                          <Insets bottom="6.0" />
+                                       </VBox.margin>
+                                    </ChoiceBox>
+                                    <ChoiceBox fx:id="warzywa2Kolacja" layoutX="10.0" layoutY="87.0" prefHeight="26.0" prefWidth="149.0">
+                                       <VBox.margin>
+                                          <Insets bottom="6.0" />
+                                       </VBox.margin>
+                                    </ChoiceBox>
+                                    <ChoiceBox fx:id="warzywa3Kolacja" layoutX="47.0" layoutY="143.0" prefHeight="26.0" prefWidth="149.0" />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="89.0" prefWidth="330.0">
+                           <children>
+                              <Button fx:id="zapiszJadlospisPrzycisk" focusTraversable="false" mnemonicParsing="false" onAction="#akcjaZapiszJadlospis" prefHeight="43.0" prefWidth="165.0" text="Zapisz jadłospis" textAlignment="JUSTIFY">
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>
