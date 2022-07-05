@@ -1,45 +1,45 @@
 Posiłek 1: 
 Chleb żytni razowy: 
-70
+170
 Jaja kurze: 
-30
+40
 Szynka gotowana(wędlina): 
-70
+50
 Masło ekstra: 
-7
+14
 Pomidor: 
 150
 Cebula: 
 25
 Posiłek 2: 
 Kasza bulgur: 
-70
+130
 Filet z dorsza: 
-80
+70
 Oliwa z oliwek: 
-10
+17
 Pomidor: 
 150
 Rzodkiewka: 
 25
 Posiłek 3: 
 Ryż biały: 
-60
+120
 Pierś kurczaka: 
-80
+90
 Oliwa z oliwek: 
-10
+18
 Pomidor: 
 150
 Cebula: 
 25
 Posiłek 4: 
 Kasza gryczana: 
-80
+140
 Pierś indyka: 
-70
+50
 Olej lniany: 
-9
+15
 Ogórek: 
 150
 Rzodkiewka: 
@@ -48,9 +48,9 @@ Posiłek 5:
 Tuńczyk w wodzie: 
 40
 Mozzarella light: 
-60
+70
 Oliwa z oliwek: 
-5
+13
 Sałata lodowa: 
 150
 Cebula: 

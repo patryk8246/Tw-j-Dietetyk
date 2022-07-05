@@ -945,11 +945,14 @@ public Controller() {
 	
 	@FXML
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		try {
-			uzytkownik.odczytPlikTxt();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		if(uzytkownik.getPlik().isFile())
+		{
+			try {
+				uzytkownik.odczytPlikTxt();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		
 		loadDB();
@@ -1060,9 +1063,24 @@ public Controller() {
 			problemDieta.setItems(problemDietaUtrzymanieMasy);
 			problemDieta.getSelectionModel().selectFirst();
 		}
+		if(uzytkownik.getPlik().isFile()) {
+			celLabel.setText(uzytkownik.getCel());
+			wagaLabel.setText(toString(((int)uzytkownik.getWaga()))+" kg");
+			wzrostLabel.setText(toString((int)uzytkownik.getWzrost())+" cm");
+			kalorieLabel.setText(toString((int)uzytkownik.getZapotrzebowanie())+" kcal");
+			powitalnyLabel.setText("Witaj "+uzytkownik.getImie()+"!");
+		} else {
+			celLabel.setText("Uzupe\u0142nij dane");
+			wagaLabel.setText("Uzupe\u0142nij dane");
+			wzrostLabel.setText("Uzupe\u0142nij dane");
+			kalorieLabel.setText("Uzupe\u0142nij dane");
+			powitalnyLabel.setText("Witaj u\u017Cytkowniku!");
+		}
+		/*
 		if(uzytkownik.getPlik() != null) {
 			if(uzytkownik.getCel().length() == 0) {
 				celLabel.setText("Uzupe\u0142nij dane");
+				
 			}
 			else
 			{
@@ -1099,6 +1117,8 @@ public Controller() {
 			{
 			powitalnyLabel.setText("Witaj "+uzytkownik.getImie()+"!");
 			}	
+			
 		}
+		*/
 	}
 }
